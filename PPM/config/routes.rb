@@ -1,4 +1,12 @@
 PPM::Application.routes.draw do
+  get "index_controller/ProfileController"
+
+  get "index_controller/CurriculumController"
+
+  get "index/Profile"
+
+  get "index/Curriculum"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
