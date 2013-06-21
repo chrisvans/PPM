@@ -1,47 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-  <title>PPM User Profile</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
 <%= render 'layouts/header' %>
 
 <%= yield %>
-<div class='container-fluid'>
-  <h1>Student Profile</h1>
-	<div class='span6'>
-	<p>
-	  <%= image_tag("michelle.jpg", :alt => "kid1", :class => 'img-circle img-circle-small') %> Level <span class="badge badge-important">1</span>
-	</p>
-	<p>
-	  <b>Name:</b>
-      Geoffrey Robins
-	</p>
-	<p>
-	  <b>Email:</b>
-	  grobins@gmail.com
-	</p>
-	<p>
-	  <b>Bio:</b>
-	  Geoffrey has been interested in making custom chairs for his school's new computer lab.
-	</p>
-	</div>
 
-	<div class='span6'>
-	  <p>Placeholder for product image.<img></img></p>
-	  <p>I need to purchase materials to improve my work, and keep producing more things.  I've collected $20 so far and need $100.  Please help by donating or purchasing my work!</p>
-	    <div class="progress progress-striped active">
-	       <div class="bar" style="width: 20%;"></div>
-	    </div>
-	    <button class="btn btn-large btn-primary" type="submit">Donate!</button>
-	    <button class="btn btn-large btn-primary" type="submit">Purchase</button>
+<div class="container-fluid">
+	<div class="row">
+		<div class="span4">
+
+			<div class="well">
+			  <h1 class="custom-h">Meet your Maker</h1>
+				<p>
+				  <%= image_tag("maria.png", :alt => "kid1", :class => 'img-circle img-circle-small') %> 
+				</p>
+				<p>
+					Level <span class="badge badge-important">1</span>
+				</p>
+				<p>
+				  <b>Name:</b>
+			      Michelle Jamieson
+				</p>
+				<p>
+				  <b>Email:</b>
+				  grobins@gmail.com
+				</p>
+				<p>
+				  <b>Bio:</b>
+					My fondest memories of childhood were made in the kitchen with my grandmother. It wasn't a love of  cooking that inspired her to spend so much time there, but of wearing her beautifully self-designed aprons. The Possible Project has enabled me to build a business where I can share the passion I acquired from her and produce stunning aprons for kitchens everywhere.			
+				</p>
+			</div>
+		</div>
+
+		<div class="span4">
+			<div class="well">
+		  		<p>Placeholder for product image.<img></img></p>
+			    <button class="btn btn-large btn-primary" type="submit">Purchase</button>		  		
+			</div>
+		</div>
+	
+
+		<div class="span4">
+			<div class="well">
+			  <p>I need to purchase materials to improve my work, and keep producing more things.  In order to keep my business open, I need to purchase 1,000 yards of fabric</p>
+			  <p>Total Cost: $125</p>
+			  <p>$50 to go!</p>
+				<p>5 donors</p>
+			    <div class="progress progress-striped active">
+			       <div class="bar" style="width: 60%;"></div>
+			    </div>
+			    <button class="btn btn-large btn-primary" type="submit">Donate!</button>
+			</div>
+		</div>
 	</div>
 </div>
-
 <%= render 'layouts/footer' %>
+
+
 </body>
