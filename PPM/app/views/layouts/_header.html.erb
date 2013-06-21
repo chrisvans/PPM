@@ -20,7 +20,7 @@
 		    	<div style="float:right"> 
 		    	  <ul class="nav nav-pills" style='display:inline'>	
                       <% if current_user %>
-                      	<li><%= link_to "Logged in as #{current_user.email}", profile_path %></li>
+                      	<li><%= link_to "#{current_user.email}", profile_path %></li>
                         <li><%= link_to "Log out", log_out_path %></li>
   					  <% else %>
     					<li><%= link_to "Sign up", sign_up_path %></li>
