@@ -21,6 +21,24 @@ body {
     color: white;
     text-align: center;
 }	
+.kids-box {
+	margin-top: 40px;
+}
+
+/*hover effects for image*/
+#yourimage { background: url(../YourBlackAndWhiteImage.png);}
+
+#yourImage:hover { background: url(../YourColoredImage.png);
+}
+
+.curry-align {
+	text-align: left;
+}
+.video-align {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
 
 .custom-h1 {
 	font-family: 'Helvetica Neue', 'sans-serif';
@@ -39,7 +57,13 @@ body {
 	font-size: 22px;
 	font-weight: 500;
 	color: white;
-
+}
+.custom-h4 {
+	font-family: 'Helvetica Neue', 'sans-serif';
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: white;
 }
 
 .footer-link {
