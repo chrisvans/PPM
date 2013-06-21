@@ -1,27 +1,35 @@
-<h1>Sign Up</h1>
+<div class="container">
+  <div class="span5 offset1">
+  <div class="frosty">
 
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
+  <h2 class="custom-h2">Sign Up</h2>
+  </br>
+
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <div class="error_messages">
+        <h2>Form is invalid</h2>
+        <ul>
+          <% for message in @user.errors.full_messages %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <p>
+      <%= f.label :email, :class => 'custom-h3' %><br />
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :password, :class => 'custom-h3' %><br />
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.label :password_confirmation, :class => 'custom-h3' %><br />
+      <%= f.password_field :password_confirmation %>
+    </p>
+      <%= submit_tag("Sign Up", :class => 'btn btn-large btn-success') %>
   <% end %>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p class="button"><%= f.submit %></p>
-<% end %>
+  </div>
+  </div>
+</div>

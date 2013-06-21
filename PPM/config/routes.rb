@@ -18,6 +18,12 @@ PPM::Application.routes.draw do
 
   get "profile" => "users#show", :as => "profile"
 
+  get "home" => "index#home", :as => "home"
+
+  get "about" => "index#about", :as => "about"
+
+  get "curriculum" => "index#curriculum", :as => "curriculum"
+
   match "index/profile" => "users#show"
 
 #root :to => "users#new"
