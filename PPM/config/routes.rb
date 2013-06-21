@@ -1,8 +1,23 @@
 PPM::Application.routes.draw do
 
+  get "sessions/new"
+
+  get "users/new"
+
   get "index/Profile"
 
   get "index/Curriculum"
+
+  get "log_out" => "sessions#destroy", :as => "log_out"
+
+  get "log_in" => "sessions#new", :as => "log_in"
+
+  get "sign_up" => "users#new", :as => "sign_up"
+
+root :to => "users#new"
+
+resources :users
+resources :sessions
 
 root :to => 'index#home'
 
@@ -64,3 +79,4 @@ root :to => 'index#home'
   # Note: This route will make all actions in every controller accessible via GET requests.
    match ':controller(/:action(/:id))(.:format)'
 end
+
