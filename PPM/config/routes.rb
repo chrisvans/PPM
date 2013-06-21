@@ -1,10 +1,12 @@
 PPM::Application.routes.draw do
 
+  get "photos/photos"
+
   get "sessions/new"
 
   get "users/new"
 
-  get "index/Profile"
+  #get "index/profile"
 
   get "index/Curriculum"
 
@@ -14,10 +16,16 @@ PPM::Application.routes.draw do
 
   get "sign_up" => "users#new", :as => "sign_up"
 
+  get "profile" => "users#show", :as => "profile"
+
+  match "users/profile" => "users#show"
+
 #root :to => "users#new"
 
 resources :users
 resources :sessions
+resources :photos
+resources :geocoder
 
 root :to => 'index#home'
 

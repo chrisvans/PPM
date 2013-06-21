@@ -11,4 +11,14 @@ class UsersController < ApplicationController
 	    render "new"
 	  end
 	end
+
+	def show
+		if @user
+			puts "Yes"
+			render "profile"
+	    else
+	    	puts "No"
+	        redirect_to root_url, :notice => "Please sign in to access your profile!"
+	    end
+	end
 end

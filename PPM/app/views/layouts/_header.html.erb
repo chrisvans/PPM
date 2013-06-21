@@ -8,21 +8,30 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 		    </a>
-		     
-		    <!-- Be sure to leave the brand out there if you want it shown -->
-		    <img src="./app/assets/images/Makerspace.jpg"><%= link_to "#{}", root_path, class: "brand" %>
+		  <div class="container-fluid">
 
 		    <!-- Everything you want hidden at 940px or less, place within here -->
 		    <div class="nav-collapse collapse">
-		    	<ul class="nav">
+		    	  <ul class="nav">
 		    		<li><%= link_to "Home"  %></li>
-		    		<li><%= link_to "About"  %></li>
-		    	</ul>
-		    	<ul class="nav pull-right">
-		    			<li><%= submit_tag "Log in" %></li>
-		    	</ul>
+		    		<li><%= link_to "About"  %></li>   
+		    	  </ul>
+		    	<div style="float:right"> 
+		    	  <ul class="nav nav-pills" style='display:inline'>	
+                      <% if current_user %>
+                      	<li><%= link_to "Logged in as #{current_user.email}", profile_path %></li>
+                        <li><%= link_to "Log out", log_out_path %></li>
+  					  <% else %>
+    					<li><%= link_to "Sign up", sign_up_path %></li>
+    					<li style='display:inline'>or</li>
+    					<li><%= link_to "Log in", log_in_path %></li>
+  					  <% end %>
+  				  </ul>
+  				</div>
+                </ul>
 		    <!-- .nav, .navbar-search, .navbar-form, etc -->
 		    </div>
+		  </div>
 	     
 	    </div>
     </div>
