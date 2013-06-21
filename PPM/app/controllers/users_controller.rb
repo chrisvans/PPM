@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
-		if @user
+		if current_user
 			puts "Yes"
 			render "profile"
 	    else

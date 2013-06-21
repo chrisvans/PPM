@@ -18,7 +18,7 @@ PPM::Application.routes.draw do
 
   get "profile" => "users#show", :as => "profile"
 
-  match "users/profile" => "users#show"
+  match "index/profile" => "users#show"
 
 #root :to => "users#new"
 
