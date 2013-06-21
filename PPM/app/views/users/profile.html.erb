@@ -23,10 +23,7 @@
   <%= best_in_place @user, :email %>
 </p>
 <p>
-  <b>Public profile:</b>
-  <%= best_in_place @user, :public_profile, type: :checkbox, collection: %w[No Yes] %>
-</p>
-<p>
+  <b>Bio:</b>
   <%= best_in_place @user, :bio, type: :textarea %>
 </p>
 
