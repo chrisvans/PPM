@@ -26,6 +26,11 @@ body {
 }
 
 /*hover effects for image*/
+<<<<<<< HEAD
+#yourimage { background: url(../YourBlackAndWhiteImage.png);}
+
+#yourImage:hover { background: url(../YourColoredImage.png);
+=======
 .joey { 
 	background: url('joeybw.jpg');
 }
@@ -48,6 +53,7 @@ body {
 
 .michelle:hover { 
 	background: url('michelle.png');
+>>>>>>> 2d85b8640124c78826a09b0323f51e7517a6b74e
 }
 
 .curry-align {
