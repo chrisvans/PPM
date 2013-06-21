@@ -1,20 +1,19 @@
 
 
-<%= render 'layouts/header' %>
 
 <%= yield %>
 
-<div class="container-fluid">
+<div class="span12">
 	<div class="row">
 		<div class="span4">
 
 			<div class="well">
-			  <h1 class="custom-h">Meet your Maker</h1>
+			  <h1 class="custom-h2 profile">Meet your Maker</h1>
 				<p>
 				  <%= image_tag("maria.png", :alt => "kid1", :class => 'img-circle img-circle-small') %> 
 				</p>
 				<p>
-					Level <span class="badge badge-important">1</span>
+					Level <span class="badge badge-important">3</span>
 				</p>
 				<p>
 				  <b>Name:</b>
@@ -25,30 +24,40 @@
 				  grobins@gmail.com
 				</p>
 				<p>
-				  <b>Bio:</b>
-					My fondest memories of childhood were made in the kitchen with my grandmother. It wasn't a love of  cooking that inspired her to spend so much time there, but of wearing her beautifully self-designed aprons. The Possible Project has enabled me to build a business where I can share the passion I acquired from her and produce stunning aprons for kitchens everywhere.			
+					<h4 class="custom-h4 profile">
+						My fondest memories of childhood were made in the kitchen with my grandmother. It wasn't a love of  cooking that inspired her to spend so much time there, but of wearing her beautifully self-designed aprons. The Possible Project has enabled me to build a business where I can share the passion I acquired from her and produce stunning aprons for kitchens everywhere.	
+					</h4>		
 				</p>
 			</div>
 		</div>
 
 		<div class="span4">
 			<div class="well">
-		  		<p>Placeholder for product image.<img></img></p>
-			    <button class="btn btn-large btn-primary" type="submit">Purchase</button>		  		
+				<h2 class="custom-h2 profile">My Products</h2>
+				<%= image_tag "apron.jpg" %>
+		  		<h4 class="custom-h4 profile">
+		  			Handmade Apron made from organic cotton. Double blind stitch, size medium, black, white and red
+		  		</h4>
+		  		<h3 class="custom-h3 profile">Find my Work Here</h3>
+			    <button class="btn btn-large btn-success" type="submit">Etsy</button>
+				<button class="btn btn-large btn-success" type="submit">Custom Made</button>	    
 			</div>
 		</div>
 	
 
 		<div class="span4">
 			<div class="well">
-			  <p>I need to purchase materials to improve my work, and keep producing more things.  In order to keep my business open, I need to purchase 1,000 yards of fabric</p>
-			  <p>Total Cost: $125</p>
-			  <p>$50 to go!</p>
-				<p>5 donors</p>
+			<h2 class="custom-h2 profile">Support</h2>
+			  <h4 class="custom-h4 profile">
+			  	I need to purchase materials to improve my work, and keep producing more things.  In order to keep my business open, I need to purchase 1,000 yards of fabric
+			  </h4>
+			  <h4 class="custom-h4 profile">
+			  <strong>Total Cost: $125 || $50 to go!</strong>
+			</h4>
 			    <div class="progress progress-striped active">
 			       <div class="bar" style="width: 60%;"></div>
 			    </div>
-			    <button class="btn btn-large btn-primary" type="submit">Donate!</button>
+			    <button class="btn btn-large btn-success" type="submit">Donate!</button>
 			</div>
 		</div>
 	</div>

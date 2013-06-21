@@ -76,15 +76,17 @@ body {
 }
 .custom-h2 {
 	font-family: 'Helvetica Neue', 'sans-serif';
-	font-size: 52px;
+	font-size: 48px;
 	font-weight: 100;
 	color: white;
+}
+.profile {
+	color: black;
 }
 .custom-h3 {
 	font-family: 'Helvetica Neue', 'sans-serif';
 	font-size: 22px;
 	font-weight: 500;
-	color: white;
 	text-decoration: none;
 }
 .no-link {
@@ -99,7 +101,6 @@ body {
 	font-size: 18px;
 	font-weight: 100;
 	letter-spacing: 2px;
-	color: white;
 }
 
 .footer-link {
