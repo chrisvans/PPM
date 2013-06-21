@@ -5,7 +5,6 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessor :name
   attr_accessor :bio
-  attr_accessor :public_profile
 
   before_save :encrypt_password
   
@@ -13,11 +12,18 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   validates_presence_of :email
   validates_uniqueness_of :email
+
+  has_attached_file :photo, :styles => { :small => "150x150>" },
+                    :url  => "/assets/products/:id/:style/:basename.:extension",
+                    :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
+
+  validates_attachment_presence :photo
+  validates_attachment_size :photo, :less_than => 5.megabytes
+  validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
   
   def set_attr
     @name = ''
     @bio = ''
-    @public_profile = ''
   end
 
   def self.authenticate(email, password)
