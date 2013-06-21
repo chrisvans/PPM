@@ -1,4 +1,12 @@
 class UsersController < ApplicationController
+  respond_to :html, :json
+ 
+	def update
+	  @user = User.find(params[:id])
+	  @user.update_attributes(params[:user])
+	  respond_with @user
+	end
+
 	def new
 	  @user = User.new
 	end
@@ -14,10 +22,9 @@ class UsersController < ApplicationController
 
 	def show
 		if current_user
-			puts "Yes"
+			@user = current_user
 			render "profile"
 	    else
-	    	puts "No"
 	        redirect_to root_url, :notice => "Please sign in to access your profile!"
 	    end
 	end
