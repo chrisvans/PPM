@@ -26,9 +26,34 @@ body {
 }
 
 /*hover effects for image*/
+<<<<<<< HEAD
 #yourimage { background: url(../YourBlackAndWhiteImage.png);}
 
 #yourImage:hover { background: url(../YourColoredImage.png);
+=======
+.joey { 
+	background: url('joeybw.jpg');
+}
+
+.joey:hover { 
+	background: url('joey.png');
+}
+
+.maria { 
+	background: url('mariabw.jpg');
+}
+
+.maria:hover { 
+	background: url('maria.png');
+}
+
+.michelle { 
+	background: url('michellebw.jpg');
+}
+
+.michelle:hover { 
+	background: url('michelle.png');
+>>>>>>> 2d85b8640124c78826a09b0323f51e7517a6b74e
 }
 
 .curry-align {
