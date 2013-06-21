@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 			@user = current_user
 			render "profile"
 	    else
-	        redirect_to root_url, :notice => "Please sign in to access your profile!"
+			render "profile"
 	    end
 	end
 end

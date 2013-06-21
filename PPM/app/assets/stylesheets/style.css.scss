@@ -76,6 +76,11 @@ body {
 	font-size: 22px;
 	font-weight: 500;
 	color: white;
+	text-decoration: none;
+}
+.no-link:hover {
+	color: gray;
+	text-decoration: none;
 }
 .custom-h4 {
 	font-family: 'Helvetica Neue', 'sans-serif';
