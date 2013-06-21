@@ -27,9 +27,13 @@ body {
 
 /*hover effects for image*/
 
-#yourimage { background: url(../YourBlackAndWhiteImage.png);}
+#yourimage { 
+	background: url(../YourBlackAndWhiteImage.png);
+}
 
-#yourImage:hover { background: url(../YourColoredImage.png);
+#yourImage:hover { 
+	background: url(../YourColoredImage.png);
+}
 
 .joey { 
 	background: url('joeybw.jpg');
