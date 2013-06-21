@@ -1,3 +1,27 @@
 /*Add the bootstrap styles*/
 
+body {
+	padding-top: 80px;
+	background: url('homebackground.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.frosty {
+	background-color: rgba(36, 32, 33, 0.7);
+    box-shadow: 2px -2px 2px 2px rgba(36, 32, 33, 0.7);
+    padding: 1%;
+    color: white;
+    text-align: center;
+}	
+
+.custom-h2 {
+	font-family: 'Helvetica Neue', 'sans-serif';
+	font-size: 72px;
+	font-weight: 100px;
+
+}
+
 @import 'bootstrap';
